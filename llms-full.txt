@@ -1,0 +1,90 @@
+# BWK Digital Solutions — Full Overview
+
+> Technology Should Solve Problems, Not Create Them.
+
+## About
+
+BWK Digital Solutions is a digital consultancy founded by Bret Kramer, based in Little Rock, Arkansas, serving businesses nationwide. The company helps businesses solve digital problems through practical, no-nonsense technology solutions.
+
+Bret's approach: listen first, then solve. No one-size-fits-all recommendations. Solutions are tailored to each business's specific needs, budget, and goals. The focus is on practical results over flashy technology — teaching clients how things work rather than creating dependency.
+
+## Services
+
+### Automation
+Stop doing the same tasks over and over. BWK builds automated workflows that handle repetitive work, connect apps, and free up time for what matters.
+
+What this includes:
+- Email sequences and follow-ups
+- Data entry and transfer between systems
+- Invoice and payment processing
+- Social media scheduling
+- Customer onboarding workflows
+- Report generation and distribution
+
+### Integration
+Your tools should work together, not against each other. BWK connects systems so data flows seamlessly between platforms — no more copy-pasting or manual updates.
+
+What this includes:
+- CRM to email marketing platforms
+- E-commerce to accounting software
+- Form submissions to databases
+- Calendar and scheduling tools
+- Custom API connections
+- Data synchronization across platforms
+
+### Development
+Your website is your digital storefront. BWK creates clean, professional solutions that represent your brand and actually work for you.
+
+What this includes:
+- New website design and development
+- Website redesigns and updates
+- Mobile-responsive design
+- E-commerce setup
+- Landing pages
+- Website maintenance and support
+
+### AI Leverage
+AI is changing how businesses operate. BWK helps businesses leverage AI tools practically — not for hype, but for real efficiency gains that make sense for specific situations.
+
+What this includes:
+- Chatbots and customer service automation
+- Content generation workflows
+- Data analysis and insights
+- Document processing
+- Custom AI tool implementation
+- AI strategy consulting
+
+## Frequently Asked Questions
+
+### Who does BWK Digital Solutions work with?
+BWK works with a diverse clientele ranging from enterprise organizations to first-time business owners. The common thread is businesses that want technology to work for them, not against them.
+
+### Where is BWK Digital Solutions located?
+Based in Little Rock, Arkansas, but working with clients nationwide. Digital work knows no boundaries — remote clients receive the same level of attention and care.
+
+### What makes BWK different from other digital agencies?
+BWK focuses on practical solutions over flashy ones. The approach is to understand actual problems before proposing solutions, teach clients how things work rather than creating dependency, and build systems that grow with the business.
+
+### How do I get started?
+Visit https://bwkdigitalsolutions.com/contact.html or email info@bwkdigitalsolutions.com. Every project gets a custom quote based on specific needs. Response time is typically within one business day.
+
+### What does a typical engagement look like?
+It starts with a conversation about what's not working and how to fix it. No jargon, no pressure — just practical solutions. From there, BWK provides a custom quote and timeline based on the project scope.
+
+## Contact Information
+
+- Website: https://bwkdigitalsolutions.com
+- Email: info@bwkdigitalsolutions.com
+- Location: Little Rock, Arkansas
+- Service Area: Nationwide (United States)
+
+## Page Directory
+
+- Home: https://bwkdigitalsolutions.com/
+- About: https://bwkdigitalsolutions.com/about.html
+- Services: https://bwkdigitalsolutions.com/services.html
+- Blog: https://bwkdigitalsolutions.com/blog.html
+- Contact: https://bwkdigitalsolutions.com/contact.html
+- Privacy Policy: https://bwkdigitalsolutions.com/privacy.html
+- Terms of Service: https://bwkdigitalsolutions.com/terms.html
+- Refund Policy: https://bwkdigitalsolutions.com/refund.html

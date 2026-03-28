@@ -1,0 +1,25 @@
+# BWK Digital Solutions
+
+> Technology Should Solve Problems, Not Create Them.
+
+BWK Digital Solutions is a digital consultancy that helps businesses solve technology problems through automation, integration, web development, and AI. Founded by Bret Kramer and based in Little Rock, Arkansas, serving clients nationwide.
+
+## Services
+
+- **Automation**: Automated workflows for repetitive tasks — email sequences, data entry, invoicing, customer onboarding, report generation
+- **Integration**: Connecting business systems so data flows seamlessly — CRM to email, e-commerce to accounting, custom API connections
+- **Development**: Websites and web applications — new builds, redesigns, mobile-responsive, e-commerce, landing pages
+- **AI Leverage**: Practical AI implementation — chatbots, content workflows, data analysis, document processing, AI strategy consulting
+
+## Contact
+
+- Website: https://bwkdigitalsolutions.com
+- Email: info@bwkdigitalsolutions.com
+- Location: Little Rock, Arkansas (serving clients nationwide)
+
+## Links
+
+- Services: https://bwkdigitalsolutions.com/services.html
+- About: https://bwkdigitalsolutions.com/about.html
+- Blog: https://bwkdigitalsolutions.com/blog.html
+- Contact: https://bwkdigitalsolutions.com/contact.html
