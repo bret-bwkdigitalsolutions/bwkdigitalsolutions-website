@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BWK Digital Solutions</title>
+    <meta name="description" content="Get in touch with BWK Digital Solutions. Let's discuss your digital challenges and find practical solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready to solve your digital problems? Let's talk.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can I help? *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project or challenge..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Me</h3>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@bwkdigitalsolutions.com">info@bwkdigitalsolutions.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Little Rock, Arkansas</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-content">
+                            <h4>Working Everywhere</h4>
+                            <p>I work with clients locally and remotely, bringing the same level of attention and care to every project.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; padding: 24px; background: var(--light); border-radius: var(--radius);">
+                        <h4 style="margin-bottom: 0.5rem;">Response Time</h4>
+                        <p style="margin: 0;">I typically respond within one business day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="BWK Digital Solutions" style="height: 40px;">
+                    <p>Technology Should Solve Problems, Not Create Them.</p>
+                    <p>Little Rock, Arkansas</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Automation</a></li>
+                        <li><a href="services.html">Integration</a></li>
+                        <li><a href="services.html">Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@bwkdigitalsolutions.com">info@bwkdigitalsolutions.com</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BWK Digital Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
+</body>
+</html>
