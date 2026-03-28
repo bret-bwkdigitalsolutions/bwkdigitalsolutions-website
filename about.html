@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://bwkdigitalsolutions.com/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
@@ -49,14 +49,19 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo"><img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img"></a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                <span class="logo-text">BWK Digital</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -64,36 +69,51 @@
     <main>
     <section class="page-header">
         <div class="container">
-            <h1>About BWK Digital Solutions</h1>
-            <p>A passion for solving problems</p>
+            <span class="section-label fade-up">About</span>
+            <h1 class="fade-up fade-up-delay-1">A passion for solving problems</h1>
+            <p class="fade-up fade-up-delay-2">And a bird that started it all.</p>
         </div>
     </section>
 
-    <section class="about-section" style="background: white;">
+    <section class="about-detail">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content">
+                <div class="about-content fade-up">
                     <h2>Meet Bret</h2>
-                    <p>I'm Bret, the founder of BWK Digital Solutions, and I believe technology should make your life easier—not harder.</p>
-                    <p>Too often, I see businesses struggling with digital tools that were supposed to help them. Software that doesn't talk to each other. Websites that look outdated or don't work on mobile. Hours lost to tasks that could be automated. It doesn't have to be this way.</p>
+                    <p>I'm the founder of BWK Digital Solutions, and I believe technology should make your life easier — not harder.</p>
+                    <p>Too often, I see businesses struggling with digital tools that were supposed to help them. Software that doesn't talk to each other. Websites that look outdated or don't work on mobile. Hours lost to tasks that could be automated.</p>
+                    <p>It doesn't have to be this way.</p>
                 </div>
-                <div class="about-image">
+                <div class="about-image fade-up fade-up-delay-1">
                     <img src="logo.jpg" alt="BWK Digital Solutions">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="bird-story">
+        <div class="container">
+            <div class="bird-story-grid">
+                <div class="bird-story-content fade-up">
+                    <h2>About the bird</h2>
+                    <p>You've probably noticed the bird. Here's the thing — it's all I can draw. Doesn't matter what I try: a cow, a dog, a horse. They all end up looking like a bird.</p>
+                    <p>So a long time ago, I gave up fighting it and perfected my bird instead. That bird now adorns the walls of bars and restaurants around the world, drawn wherever I was encouraged to sign the wall.</p>
+                    <p>It's a pretty good metaphor for how I work, too. Stop forcing things that aren't working. Find what you're actually good at. Perfect that instead.</p>
+                </div>
+                <div class="bird-story-visual fade-up fade-up-delay-1">
+                    <img src="logo.jpg" alt="The BWK bird">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-approach">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image">
-                    <img src="logo.jpg" alt="My Approach">
-                </div>
-                <div class="about-content">
+                <div class="about-image fade-up" style="display: none;"></div>
+                <div class="about-content fade-up" style="grid-column: 1 / -1; max-width: 640px;">
                     <h2>My Approach</h2>
-                    <p>I take the time to understand your actual problems before proposing solutions. There's no one-size-fits-all in digital solutions—what works for one business might be overkill or completely wrong for another.</p>
-                    <p>I focus on:</p>
+                    <p>I take the time to understand your actual problems before proposing solutions. There's no one-size-fits-all in digital solutions — what works for one business might be overkill or completely wrong for another.</p>
                     <ul class="approach-list">
                         <li>Listening first, then solving</li>
                         <li>Practical solutions over flashy ones</li>
@@ -105,10 +125,10 @@
         </div>
     </section>
 
-    <section class="about-section" style="background: white;">
-        <div class="container" style="text-align: center; max-width: 800px;">
-            <h2>Based in Arkansas, Working Everywhere</h2>
-            <p style="font-size: 1.25rem;">BWK Digital Solutions is based in Little Rock, Arkansas, but digital work knows no boundaries. I work with clients locally and remotely, bringing the same level of attention and care to every project.</p>
+    <section class="about-location">
+        <div class="container fade-up">
+            <h2>Based in Arkansas, working everywhere</h2>
+            <p>BWK Digital Solutions is based in Little Rock, Arkansas, but digital work knows no boundaries. I work with clients locally and remotely, bringing the same level of attention and care to every project.</p>
             <a href="contact.html" class="btn btn-primary btn-large" style="margin-top: 2rem;">Let's Work Together</a>
         </div>
     </section>
@@ -118,8 +138,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.jpg" alt="BWK Digital Solutions" style="height: 40px;">
-                    <p>Technology Should Solve Problems, Not Create Them.</p>
+                    <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                    <p>Technology should solve problems, not create them.</p>
                     <p>Little Rock, Arkansas</p>
                 </div>
                 <div>
@@ -158,6 +178,14 @@
             </div>
         </div>
     </footer>
-    <script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
+    <script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

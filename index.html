@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://bwkdigitalsolutions.com/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
@@ -103,14 +103,19 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo"><img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img"></a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                <span class="logo-text">BWK Digital</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -119,44 +124,46 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Technology Should Solve Problems<span class="accent-text">Not Create Them</span></h1>
-                <p class="tagline">Automate • Integrate • Innovate • AI-Leverage</p>
-                <p class="hero-description">A passion for solving problems. Our comprehensive suite of professional services caters to a diverse clientele, ranging from enterprise to first time business owners.</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Let's Talk</a>
+                <h1 class="fade-up">Technology Should<br>Solve Problems,<span class="accent-text">Not Create Them.</span></h1>
+                <p class="hero-description fade-up fade-up-delay-1">I help businesses cut through digital complexity with automation, integration, development, and AI that actually works.</p>
+                <div class="hero-cta fade-up fade-up-delay-2">
+                    <a href="contact.html" class="btn btn-primary btn-large">Start a Conversation</a>
+                    <a href="services.html" class="btn btn-secondary">View Services</a>
+                </div>
             </div>
             <div class="hero-graphic">
-                <div class="floating-card card-1"><span class="card-icon">🔄</span><span>Automation</span></div>
-                <div class="floating-card card-2"><span class="card-icon">🔗</span><span>Integration</span></div>
-                <div class="floating-card card-3"><span class="card-icon">💻</span><span>Development</span></div>
-                <div class="floating-card card-4"><span class="card-icon">🤖</span><span>AI Solutions</span></div>
+                <img src="logo.jpg" alt="" class="hero-bird" aria-hidden="true">
             </div>
         </div>
     </section>
 
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">What I Do</h2>
-            <p class="section-subtitle">Every business faces digital challenges. Here's how I can help solve yours.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
+            <div class="section-header-center fade-up">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Four ways I solve digital problems</h2>
+                <p class="section-subtitle">Every business faces digital friction. Here's how I help eliminate yours.</p>
+            </div>
+            <div class="services-list">
+                <div class="service-item fade-up">
+                    <span class="service-number">01</span>
                     <h3>Automation</h3>
                     <p>Stop doing the same tasks over and over. I build automated workflows that handle repetitive work, connect your apps, and free up your time for what matters.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔗</div>
+                <div class="service-item fade-up fade-up-delay-1">
+                    <span class="service-number">02</span>
                     <h3>Integration</h3>
-                    <p>Your tools should work together, not against each other. I connect your systems so data flows seamlessly between platforms—no more copy-pasting or manual updates.</p>
+                    <p>Your tools should work together, not against each other. I connect your systems so data flows seamlessly between platforms.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
+                <div class="service-item fade-up fade-up-delay-2">
+                    <span class="service-number">03</span>
                     <h3>Development</h3>
-                    <p>Your website and your mobile app are the one-two punch of your first customer impression. I create clean, professional solutions that represent your brand and actually work for you.</p>
+                    <p>Your website is your first impression. I create clean, professional solutions that represent your brand and actually work for you.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
+                <div class="service-item fade-up fade-up-delay-3">
+                    <span class="service-number">04</span>
                     <h3>AI Leverage</h3>
-                    <p>AI is changing how businesses operate. I help you leverage these tools practically—not for hype, but for real efficiency gains that make sense for your specific situation.</p>
+                    <p>AI is changing how businesses operate. I help you leverage these tools practically — for real efficiency gains, not hype.</p>
                 </div>
             </div>
         </div>
@@ -165,13 +172,14 @@
     <section class="about-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content">
-                    <h2>About BWK Digital Solutions</h2>
-                    <p>I'm Bret, the founder of BWK Digital Solutions, and I believe technology should make your life easier—not harder.</p>
-                    <p>Too often, I see businesses struggling with digital tools that were supposed to help them. Software that doesn't talk to each other. Websites that look outdated or don't work on mobile. Hours lost to tasks that could be automated. It doesn't have to be this way.</p>
-                    <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+                <div class="about-content fade-up">
+                    <span class="section-label">About</span>
+                    <h2>I'm Bret. I fix the digital stuff that's slowing you down.</h2>
+                    <p>Too many businesses struggle with tools that were supposed to help them — software that doesn't connect, hours lost to work that should be automated, websites that don't represent the quality of their work.</p>
+                    <p>I take the time to understand your actual problems before proposing solutions. No jargon, no upselling, no one-size-fits-all.</p>
+                    <a href="about.html" class="btn btn-secondary">More About My Approach</a>
                 </div>
-                <div class="about-image">
+                <div class="about-image fade-up fade-up-delay-1">
                     <img src="logo.jpg" alt="BWK Digital Solutions">
                 </div>
             </div>
@@ -179,9 +187,9 @@
     </section>
 
     <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Solve Your Digital Problems?</h2>
-            <p>Let's have a conversation about what's not working and how to fix it. No jargon, no pressure—just practical solutions.</p>
+        <div class="container fade-up">
+            <h2>Ready to solve your digital problems?</h2>
+            <p>Let's have a conversation about what's not working and how to fix it. No jargon, no pressure — just practical solutions.</p>
             <a href="contact.html" class="btn btn-primary btn-large">Get In Touch</a>
         </div>
     </section>
@@ -191,8 +199,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.jpg" alt="BWK Digital Solutions" style="height: 40px;">
-                    <p>Technology Should Solve Problems, Not Create Them.</p>
+                    <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                    <p>Technology should solve problems, not create them.</p>
                     <p>Little Rock, Arkansas</p>
                 </div>
                 <div>
@@ -231,6 +239,20 @@
             </div>
         </div>
     </footer>
-    <script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
+    <script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
