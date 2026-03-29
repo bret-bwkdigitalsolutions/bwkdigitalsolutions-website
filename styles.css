@@ -8,7 +8,7 @@
     --cream: #faf8f4;
     --cream-dark: #f0ece4;
     --text: #4a4a5a;
-    --text-light: #7a7a8a;
+    --text-light: #858596;
     --white: #ffffff;
     --border: #e8e4dc;
     --shadow-sm: 0 1px 3px rgba(26, 26, 46, 0.06);
@@ -32,6 +32,11 @@ body {
 }
 img { max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
+a:focus-visible {
+    outline: 2px solid var(--warm);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
 ul { list-style: none; }
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
@@ -91,9 +96,13 @@ p { color: var(--text); margin-bottom: 1rem; }
 }
 .btn-primary:hover {
     background: var(--warm);
-    color: var(--white);
+    color: var(--ink);
     transform: translateY(-1px);
     box-shadow: var(--shadow);
+}
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 .btn-secondary {
     background: transparent;
@@ -103,6 +112,9 @@ p { color: var(--text); margin-bottom: 1rem; }
 .btn-secondary:hover {
     background: var(--ink);
     color: var(--cream);
+}
+.btn-secondary:active {
+    transform: translateY(0);
 }
 .btn-large { padding: 18px 40px; font-size: 1.05rem; }
 
@@ -199,7 +211,7 @@ p { color: var(--text); margin-bottom: 1rem; }
     height: auto;
     opacity: 0.12;
     filter: grayscale(100%);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-graphic:hover .hero-bird {
     opacity: 0.2;
@@ -294,7 +306,7 @@ p { color: var(--text); margin-bottom: 1rem; }
 }
 .cta-section .btn-primary {
     background: var(--warm);
-    color: var(--white);
+    color: var(--ink);
 }
 .cta-section .btn-primary:hover {
     background: var(--warm-dark);
@@ -627,7 +639,7 @@ p { color: var(--text); margin-bottom: 1rem; }
 }
 .case-study .btn-primary {
     background: var(--warm);
-    color: var(--white);
+    color: var(--ink);
 }
 .case-study .btn-primary:hover {
     background: var(--warm-dark);
@@ -718,7 +730,7 @@ p { color: var(--text); margin-bottom: 1rem; }
         gap: 24px;
         border-bottom: 1px solid var(--border);
         transform: translateY(-150%);
-        transition: var(--transition);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav-links.active { transform: translateY(0); }
     .mobile-menu-btn { display: flex; }
