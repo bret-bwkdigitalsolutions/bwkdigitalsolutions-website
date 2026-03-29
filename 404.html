@@ -3,24 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | BWK Digital Solutions</title>
-    <meta name="description" content="Practical insights on automation, integration, web development, and AI for businesses. By Bret Kramer at BWK Digital Solutions.">
-    <meta name="author" content="Bret Kramer">
-    <meta name="geo.region" content="US-AR">
-    <meta name="geo.placename" content="Little Rock">
-    <link rel="canonical" href="https://bwkdigitalsolutions.com/blog.html">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Blog | BWK Digital Solutions">
-    <meta property="og:description" content="Practical insights on automation, integration, web development, and AI for businesses.">
-    <meta property="og:url" content="https://bwkdigitalsolutions.com/blog.html">
-    <meta property="og:image" content="https://bwkdigitalsolutions.com/logo.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="BWK Digital Solutions">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog | BWK Digital Solutions">
-    <meta name="twitter:description" content="Practical insights on automation, integration, web development, and AI for businesses.">
-    <meta name="twitter:image" content="https://bwkdigitalsolutions.com/logo.jpg">
+    <title>Page Not Found | BWK Digital Solutions</title>
+    <meta name="robots" content="noindex">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -29,20 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=2">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "BWK Digital Solutions Blog",
-        "url": "https://bwkdigitalsolutions.com/blog.html",
-        "description": "Insights and practical tips on automation, integration, web development, and AI for businesses.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "BWK Digital Solutions",
-            "url": "https://bwkdigitalsolutions.com"
-        }
-    }
-    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -59,35 +29,18 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
 
     <main id="main">
-    <section class="page-header">
-        <div class="container">
-            <span class="section-label fade-up">Blog</span>
-            <h1 class="fade-up fade-up-delay-1">Thoughts on digital problem-solving</h1>
-            <p class="fade-up fade-up-delay-2">Practical insights on automation, integration, development, and AI.</p>
-        </div>
-    </section>
-
-    <section class="blog-section">
-        <div class="container">
-            <div class="coming-soon fade-up">
-                <h3>Coming soon</h3>
-                <p>I'm working on some practical guides and insights. In the meantime, feel free to <a href="contact.html" class="coming-soon-link">reach out directly</a> with any questions.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="container fade-up">
-            <h2>Have a question?</h2>
-            <p>Don't wait for a blog post. Reach out and let's discuss your specific challenges.</p>
-            <a href="contact.html" class="btn btn-primary btn-large">Get In Touch</a>
+    <section class="page-header" style="padding-bottom: 0;">
+        <div class="container" style="text-align: center;">
+            <h1>Page not found</h1>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+            <a href="index.html" class="btn btn-primary btn-large btn-mt">Back to Home</a>
         </div>
     </section>
     </main>
@@ -148,15 +101,6 @@
         var btn = document.querySelector('.mobile-menu-btn');
         if (!nav.contains(e.target) && !btn.contains(e.target)) nav.classList.remove('active');
     });
-    document.querySelectorAll('.nav-links a').forEach(function(link) {
-        link.addEventListener('click', function() { document.getElementById('navLinks').classList.remove('active'); });
-    });
-    var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
     </script>
 </body>
 </html>

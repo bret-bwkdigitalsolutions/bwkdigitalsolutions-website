@@ -15,16 +15,21 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Terms of Service | BWK Digital Solutions">
     <meta name="twitter:description" content="Terms of Service for BWK Digital Solutions">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#1a1a2e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                <img src="logo-sm.jpg" alt="BWK Digital Solutions" class="logo-img" width="44" height="44">
                 <span class="logo-text">BWK Digital</span>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
@@ -40,6 +45,7 @@
         </div>
     </nav>
 
+    <main id="main">
     <section class="page-header">
         <div class="container">
             <h1>Terms of Service</h1>
@@ -108,12 +114,13 @@
             <p>Questions about these Terms? Contact us at <a href="mailto:info@bwkdigitalsolutions.com">info@bwkdigitalsolutions.com</a></p>
         </div>
     </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                    <img src="logo-sm.jpg" alt="BWK Digital Solutions" class="logo-img" width="36" height="36">
                     <p>Technology should solve problems, not create them.</p>
                     <p>Little Rock, Arkansas</p>
                 </div>
@@ -153,6 +160,27 @@
             </div>
         </div>
     </footer>
-    <script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
+    <script>
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('active');
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('navLinks').classList.remove('active');
+    });
+    document.addEventListener('click', function(e) {
+        var nav = document.getElementById('navLinks');
+        var btn = document.querySelector('.mobile-menu-btn');
+        if (!nav.contains(e.target) && !btn.contains(e.target)) nav.classList.remove('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+        link.addEventListener('click', function() { document.getElementById('navLinks').classList.remove('active'); });
+    });
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+    </script>
 </body>
 </html>

@@ -21,6 +21,10 @@
     <meta name="twitter:title" content="About | BWK Digital Solutions">
     <meta name="twitter:description" content="Learn about Bret and BWK Digital Solutions - solving digital problems for businesses nationwide.">
     <meta name="twitter:image" content="https://bwkdigitalsolutions.com/logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#1a1a2e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -47,10 +51,11 @@
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                <img src="logo-sm.jpg" alt="BWK Digital Solutions" class="logo-img" width="44" height="44">
                 <span class="logo-text">BWK Digital</span>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
@@ -66,7 +71,7 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
     <section class="page-header">
         <div class="container">
             <span class="section-label fade-up">About</span>
@@ -85,7 +90,7 @@
                     <p>It doesn't have to be this way.</p>
                 </div>
                 <div class="about-image fade-up fade-up-delay-1">
-                    <img src="logo.jpg" alt="BWK Digital Solutions">
+                    <img src="logo-md.jpg" alt="BWK Digital Solutions" width="400" height="400" loading="lazy">
                 </div>
             </div>
         </div>
@@ -101,7 +106,7 @@
                     <p>It's a pretty good metaphor for how I work, too. Stop forcing things that aren't working. Find what you're actually good at. Perfect that instead.</p>
                 </div>
                 <div class="bird-story-visual fade-up fade-up-delay-1">
-                    <img src="logo.jpg" alt="The BWK bird">
+                    <img src="logo-md.jpg" alt="The BWK bird" width="240" height="240" loading="lazy">
                 </div>
             </div>
         </div>
@@ -110,8 +115,7 @@
     <section class="about-approach">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image fade-up" style="display: none;"></div>
-                <div class="about-content fade-up" style="grid-column: 1 / -1; max-width: 640px;">
+                <div class="about-content about-approach-content fade-up">
                     <h2>My Approach</h2>
                     <p>I take the time to understand your actual problems before proposing solutions. There's no one-size-fits-all in digital solutions — what works for one business might be overkill or completely wrong for another.</p>
                     <ul class="approach-list">
@@ -129,7 +133,7 @@
         <div class="container fade-up">
             <h2>Based in Arkansas, working everywhere</h2>
             <p>BWK Digital Solutions is based in Little Rock, Arkansas, but digital work knows no boundaries. I work with clients locally and remotely, bringing the same level of attention and care to every project.</p>
-            <a href="contact.html" class="btn btn-primary btn-large" style="margin-top: 2rem;">Let's Work Together</a>
+            <a href="contact.html" class="btn btn-primary btn-large btn-mt">Let's Work Together</a>
         </div>
     </section>
     </main>
@@ -138,7 +142,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo.jpg" alt="BWK Digital Solutions" class="logo-img">
+                    <img src="logo-sm.jpg" alt="BWK Digital Solutions" class="logo-img" width="36" height="36">
                     <p>Technology should solve problems, not create them.</p>
                     <p>Little Rock, Arkansas</p>
                 </div>
@@ -179,13 +183,26 @@
         </div>
     </footer>
     <script>
-    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('active');
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('navLinks').classList.remove('active');
+    });
+    document.addEventListener('click', function(e) {
+        var nav = document.getElementById('navLinks');
+        var btn = document.querySelector('.mobile-menu-btn');
+        if (!nav.contains(e.target) && !btn.contains(e.target)) nav.classList.remove('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+        link.addEventListener('click', function() { document.getElementById('navLinks').classList.remove('active'); });
+    });
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
             if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
     </script>
 </body>
 </html>
