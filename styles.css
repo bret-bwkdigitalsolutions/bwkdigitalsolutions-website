@@ -586,6 +586,75 @@ p { color: var(--text); margin-bottom: 1rem; }
     font-size: 0.95rem;
 }
 
+/* ===== CASE STUDY ===== */
+.case-study {
+    padding: 100px 0;
+    background: var(--ink);
+}
+.case-study-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 80px;
+    align-items: center;
+}
+.case-study-content .section-label { color: var(--warm); }
+.case-study-content h2 { color: var(--cream); margin-bottom: 1.25rem; }
+.case-study-content > p { color: var(--text-light); font-size: 1.1rem; line-height: 1.8; }
+.case-study-highlights { margin: 2rem 0 2.5rem; }
+.case-study-highlight {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--ink-light);
+}
+.case-study-highlight:last-child { border-bottom: none; }
+.case-study-highlight h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--cream);
+    margin-bottom: 4px;
+}
+.case-study-highlight p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+.case-study-visual {
+    background: var(--ink-light);
+    border-radius: var(--radius);
+    padding: 48px;
+    text-align: center;
+}
+.case-study-url {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--warm);
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+.case-study-tag {
+    padding: 6px 14px;
+    border: 1px solid var(--text-light);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+.case-study .btn-primary {
+    background: var(--warm);
+    color: var(--white);
+}
+.case-study .btn-primary:hover {
+    background: var(--warm-dark);
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: var(--ink);
@@ -659,6 +728,8 @@ p { color: var(--text); margin-bottom: 1rem; }
     .bird-story-visual img { width: 180px; }
     .services-list { grid-template-columns: 1fr; }
     .service-item { border-right: none !important; }
+    .case-study-grid { grid-template-columns: 1fr; gap: 40px; }
+    .case-study-visual { order: -1; }
 }
 @media (max-width: 768px) {
     .nav-links {
