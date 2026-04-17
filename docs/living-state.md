@@ -1,58 +1,43 @@
 # bwkdigitalsolutions-website — Living State
 
 ## What This Is
-A static marketing website for BWK Digital Solutions, a solo consultancy that helps businesses solve digital problems through automation, integration, web development, and AI implementation. The site functions as the primary lead generation tool where prospects discover services, evaluate Bret Kramer's expertise, and initiate business conversations through contact forms.
+A static marketing website for BWK Digital Solutions, a Little Rock-based consultancy that helps businesses eliminate digital friction through automation, integration, web development, and AI implementation. The site serves as the primary lead generation funnel where prospects discover Bret Kramer's services, evaluate his problem-solving approach, and initiate business conversations through direct contact.
+
+## How to Run & Access
+No build process required — serves directly from static files via any web server or file system. Production deployment lives at https://bwkdigitalsolutions.com/ based on canonical URL and Open Graph metadata. No staging environment, local development server, or deployment automation is evident from the codebase. The site relies entirely on client-side rendering with no server-side dependencies.
 
 ## Current Architecture
-Zero-dependency static HTML/CSS/JavaScript architecture prioritizing performance and deployment simplicity over dynamic features. Implements comprehensive SEO through JSON-LD structured data marking the business as a ProfessionalService entity, complete Open Graph and Twitter Card meta tags, and semantic HTML structure. CSS leverages custom properties as a design token system with component-based organization using DM Sans and DM Serif Display typography loaded via Google Fonts with preconnect optimization. The architecture trades backend capabilities for hosting flexibility, load speed, and maintenance simplicity.
+Pure HTML/CSS/JavaScript static architecture optimizing for hosting simplicity and performance over dynamic capabilities. Uses CSS custom properties as a design token system with semantic component naming (`.hero`, `.services-list`, `.about-grid`). Implements comprehensive SEO through JSON-LD structured data marking BWK as a ProfessionalService entity with detailed service catalog, geographic targeting for Arkansas, and complete social sharing optimization. Typography combines DM Sans and DM Serif Display loaded via Google Fonts with preconnect optimization. The architecture deliberately trades backend functionality for deployment flexibility and maintenance simplicity.
 
 ## What Works Today
-- Fixed navigation with backdrop blur effects and active page state indicators
-- Hero section presenting value proposition with dual call-to-action paths
-- Four-service grid layout with hover animations and visual hierarchy
-- About section establishing founder credibility through methodology explanation
-- Responsive design with mobile hamburger menu structure
-- Contact form with HTML5 validation and accessibility attributes
-- Complete social sharing optimization with structured data for search rich snippets
-- Performance optimizations including image lazy loading and font preloading
-- Skip links and keyboard focus management for accessibility compliance
-- Local business schema markup targeting Arkansas geographic presence
+• Fixed navigation with backdrop blur effects and active page state indicators
+• Hero section presenting core value proposition with dual conversion paths
+• Four-service overview grid with hover animations and progressive disclosure
+• Founder credibility section explaining methodology and business philosophy  
+• Complete mobile responsiveness with hamburger menu structure
+• Contact form with semantic HTML5 validation and accessibility compliance
+• Rich social sharing with Open Graph, Twitter Cards, and business schema markup
+• Performance optimizations including lazy loading, font preloading, and image optimization
+• Keyboard navigation support with custom focus indicators and skip links
 
 ## Known Gaps & Limitations
-- Contact form lacks backend processing, making lead capture non-functional
-- Navigation links to `about.html`, `services.html`, and `blog.html` return 404 errors
-- Mobile menu references undefined `toggleMenu()` JavaScript function breaking interaction
-- No portfolio examples, case studies, or tangible work samples for credibility
-- Missing client testimonials or quantified business outcomes as social proof
-- Form submission provides no user feedback, confirmation states, or error handling
-- Blog section exists only as navigation placeholder without content infrastructure
-- No analytics implementation to measure visitor behavior or optimize conversions
+Contact form captures leads but lacks backend processing, rendering lead generation non-functional. Navigation links to `about.html`, `services.html`, `blog.html`, and `contact.html` return 404 errors since only `index.html` exists. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking mobile navigation entirely. No portfolio examples, case studies, or quantified client outcomes to establish credibility. Missing testimonials, pricing information, and detailed service descriptions limit conversion potential. Form provides no submission feedback, error states, or user confirmation.
 
 ## Next Meaningful Capabilities
-- Functional contact form processing to convert website visits into qualified sales conversations
-- Complete service detail pages explaining specific deliverables, processes, and investment levels
-- Portfolio showcase demonstrating real client outcomes with business impact metrics
-- Client testimonial collection with specific results and company attribution
-- Blog publishing capability for thought leadership and technical expertise demonstration
-- Analytics tracking enabling conversion optimization and visitor behavior insights
+Functional contact form processing to convert website visits into qualified sales conversations without compromising static hosting. Complete service detail pages explaining deliverables, timelines, and investment levels for informed prospect evaluation. Portfolio showcase demonstrating real client outcomes with business impact metrics while respecting confidentiality. Client testimonial collection with specific results and company attribution for social proof. Blog infrastructure supporting thought leadership content and technical expertise demonstration for SEO and authority building.
 
 ## Open Technical Questions
-- Contact form processing solution that maintains static hosting while ensuring reliable email delivery
-- Content management approach balancing update simplicity with technical implementation overhead
-- Portfolio presentation strategy protecting client confidentiality while proving technical capability
-- Analytics platform choice balancing privacy compliance with conversion measurement needs
-- Blog architecture supporting technical depth without overwhelming non-technical decision makers
-- Service page structure optimizing for both SEO ranking and sales conversion effectiveness
+Contact form processing solution maintaining static hosting while ensuring reliable lead delivery and spam protection. Content management strategy balancing update simplicity with technical maintenance overhead. Portfolio presentation approach protecting client confidentiality while proving technical competency and business impact. Analytics implementation choice balancing visitor privacy with conversion measurement and optimization needs. Service page structure optimizing for both search ranking and sales conversion effectiveness.
 
 ## Key Files & Entry Points
-- `index.html` — Complete homepage marketing funnel from hero through contact form
-- `styles.css` — Design system with CSS custom properties and responsive component definitions
-- JSON-LD structured data defining ProfessionalService entity with service catalog
-- `.hero` CSS class implementing grid layout with responsive typography scaling
-- `.services-list` component creating four-service overview with progressive disclosure
-- `.navbar` fixed navigation with backdrop-filter blur effects
-- Contact form structure with semantic labeling and HTML5 validation attributes
-- Mobile responsive breakpoints using CSS Grid and Flexbox layout systems
+• `index.html` — Complete homepage funnel from value proposition through lead capture form
+• `styles.css` — Design system with custom properties, responsive components, and animation definitions  
+• JSON-LD structured data — ProfessionalService entity with geographic targeting and service catalog
+• `.hero` section — Grid layout with responsive typography and dual call-to-action paths
+• `.services-list` component — Four-service overview with hover effects and visual hierarchy
+• `.navbar` component — Fixed navigation with backdrop blur and active state management
+• Contact form markup — Semantic HTML5 validation with accessibility attributes
+• Mobile breakpoint system — CSS Grid and Flexbox responsive layout implementation
 
 ---
 _Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-04-17_
