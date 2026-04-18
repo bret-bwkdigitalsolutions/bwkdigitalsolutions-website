@@ -3,26 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{POST_TITLE}} | BWK Digital Solutions</title>
-    <meta name="description" content="{{POST_DESCRIPTION}}">
+    <title>Blog | BWK Digital Solutions</title>
+    <meta name="description" content="Practical insights on automation, AI, web development, and making technology work for your business. From BWK Digital Solutions in Little Rock, Arkansas.">
     <meta name="author" content="Bret Kramer">
-    <meta name="geo.region" content="US-AR">
-    <meta name="geo.placename" content="Little Rock">
-    <link rel="canonical" href="https://bwkdigitalsolutions.com/blog/{{POST_SLUG}}.html">
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{POST_TITLE}}">
-    <meta property="og:description" content="{{POST_DESCRIPTION}}">
-    <meta property="og:url" content="https://bwkdigitalsolutions.com/blog/{{POST_SLUG}}.html">
+    <link rel="canonical" href="https://bwkdigitalsolutions.com/blog/">
+    <meta property="og:title" content="Blog | BWK Digital Solutions">
+    <meta property="og:description" content="Practical insights on automation, AI, web development, and making technology work for your business.">
+    <meta property="og:url" content="https://bwkdigitalsolutions.com/blog/">
     <meta property="og:image" content="https://bwkdigitalsolutions.com/logo.jpg">
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="BWK Digital Solutions">
-    <meta property="article:published_time" content="{{POST_DATE_ISO}}">
-    <meta property="article:author" content="Bret Kramer">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{POST_TITLE}}">
-    <meta name="twitter:description" content="{{POST_DESCRIPTION}}">
-    <meta name="twitter:image" content="https://bwkdigitalsolutions.com/logo.jpg">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -31,40 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css?v=5">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{{POST_TITLE}}",
-        "description": "{{POST_DESCRIPTION}}",
-        "datePublished": "{{POST_DATE_ISO}}",
-        "dateModified": "{{POST_DATE_ISO}}",
-        "author": {
-            "@type": "Person",
-            "name": "Bret Kramer",
-            "url": "https://bwkdigitalsolutions.com/about.html"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "BWK Digital Solutions",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://bwkdigitalsolutions.com/logo.jpg"
-            }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://bwkdigitalsolutions.com/blog/{{POST_SLUG}}.html"
-        },
-        "image": "https://bwkdigitalsolutions.com/logo.jpg"
-    }
-    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
     <nav class="navbar">
         <div class="container">
-            <a href="../index.html" class="logo">
+            <a href="../" class="logo">
                 <img src="../logo-sm.jpg" alt="BWK Digital Solutions" class="logo-img" width="44" height="44">
                 <span class="logo-text">BWK Digital</span>
             </a>
@@ -82,30 +43,35 @@
     </nav>
 
     <main id="main">
-        <section class="page-header">
-            <div class="container">
-                <a href="./" class="blog-back-link">&larr; Back to Blog</a>
-                <span class="section-label">{{POST_CATEGORY}}</span>
-                <h1>{{POST_TITLE}}</h1>
-                <p class="blog-post-meta">By Bret Kramer &middot; <time datetime="{{POST_DATE_ISO}}">{{POST_DATE_DISPLAY}}</time></p>
-            </div>
-        </section>
+    <section class="page-header page-header-center">
+        <div class="container">
+            <span class="section-label">Blog</span>
+            <h1>Thoughts on Technology</h1>
+            <p>Practical insights on automation, AI, web development, and making technology work for your business.</p>
+        </div>
+    </section>
 
-        <article class="blog-article">
-            <div class="container">
-                <div class="blog-article-content">
-                    {{POST_CONTENT}}
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <!-- BLOG_POSTS_START -->
+                <!-- New blog post cards are inserted here by the publish-blog command -->
+                <!-- BLOG_POSTS_END -->
+                <div class="coming-soon" id="comingSoon">
+                    <h3>Coming Soon</h3>
+                    <p>Blog posts are on the way. Check back soon for practical insights on automation, AI, and making technology work for your business.</p>
                 </div>
             </div>
-        </article>
+        </div>
+    </section>
 
-        <section class="cta-section">
-            <div class="container fade-up">
-                <h2>Want to talk about this?</h2>
-                <p>If this post sparked an idea or you're facing a similar challenge, let's chat. No pitch, just a conversation.</p>
-                <a href="../#contact" class="btn btn-primary btn-large">Get In Touch</a>
-            </div>
-        </section>
+    <section class="cta-section">
+        <div class="container fade-up">
+            <h2>Have a question or project in mind?</h2>
+            <p>Let's have a conversation about what's not working and how to fix it. No jargon, no pressure — just practical solutions.</p>
+            <a href="../#contact" class="btn btn-primary btn-large">Get In Touch</a>
+        </div>
+    </section>
     </main>
 
     <footer class="footer">
@@ -167,6 +133,16 @@
     document.querySelectorAll('.nav-links a').forEach(function(link) {
         link.addEventListener('click', function() { document.getElementById('navLinks').classList.remove('active'); });
     });
+    var navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
     </script>
 </body>
 </html>
