@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=5">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -116,11 +116,11 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+                <li><a href="#main" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How I Work</a></li>
+                <li><a href="#contact" class="btn btn-primary">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -132,8 +132,8 @@
                 <h1>Technology Should<br>Solve Problems,<span class="accent-text">Not Create Them.</span></h1>
                 <p class="hero-description">I help businesses cut through digital complexity with automation, integration, development, and AI that actually works.</p>
                 <div class="hero-cta">
-                    <a href="contact.html" class="btn btn-primary btn-large">Start a Conversation</a>
-                    <a href="services.html" class="btn btn-secondary">View Services</a>
+                    <a href="#contact" class="btn btn-primary btn-large">Start a Conversation</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
                 </div>
             </div>
             <div class="hero-graphic">
@@ -199,7 +199,7 @@
                             <p>APIs pulling listener data from multiple podcast platforms into a single dashboard, so the team sees the full picture in one place.</p>
                         </div>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
                 </div>
                 <div class="case-study-visual fade-up fade-up-delay-1">
                     <span class="case-study-url">stolenwatermedia.com</span>
@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-content fade-up">
@@ -223,10 +223,102 @@
                     <h2>I'm Bret. I fix the digital stuff that's slowing you down.</h2>
                     <p>Too many businesses struggle with tools that were supposed to help them — software that doesn't connect, hours lost to work that should be automated, websites that don't represent the quality of their work.</p>
                     <p>I take the time to understand your actual problems before proposing solutions. No jargon, no upselling, no one-size-fits-all.</p>
-                    <a href="about.html" class="btn btn-secondary">More About My Approach</a>
+                    <p class="bird-story-line">The hand-drawn bird you see around this site? Everything I sketch turns into a bird — so I leaned into it. It's a reminder that good solutions come from working with your instincts, not against them.</p>
+                    <a href="#process" class="btn btn-secondary">See How I Work</a>
                 </div>
                 <div class="about-image fade-up fade-up-delay-1">
                     <img src="logo-md.jpg" alt="BWK Digital Solutions" width="400" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header-center fade-up">
+                <span class="section-label">How I Work</span>
+                <h2 class="section-title">From conversation to solution</h2>
+                <p class="section-subtitle">Every project follows a clear path. No surprises, no scope creep — just steady progress toward something that works.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step fade-up">
+                    <span class="process-number">01</span>
+                    <h3>Discovery</h3>
+                    <p>We talk about what's not working. I ask questions, listen, and figure out where the real friction lives — not where you think it might be.</p>
+                </div>
+                <div class="process-step fade-up fade-up-delay-1">
+                    <span class="process-number">02</span>
+                    <h3>Scope & Proposal</h3>
+                    <p>I map out a clear plan with defined deliverables, timeline, and cost. You know exactly what you're getting before we start.</p>
+                </div>
+                <div class="process-step fade-up fade-up-delay-2">
+                    <span class="process-number">03</span>
+                    <h3>Build</h3>
+                    <p>I build in short cycles with regular check-ins. You see progress early and often — no disappearing for weeks and hoping for the best.</p>
+                </div>
+                <div class="process-step fade-up fade-up-delay-3">
+                    <span class="process-number">04</span>
+                    <h3>Launch & Support</h3>
+                    <p>We ship it, verify everything works, and I stick around to make sure it stays that way. No "good luck" handoffs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form fade-up">
+                    <h3>Start a Conversation</h3>
+                    <!-- Replace YOUR_FORM_ID with your Formspree form ID after registering at formspree.io -->
+                    <form action="https://formspree.io/f/mqewbbrl" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">What do you need help with?</label>
+                            <select id="project-type" name="project-type">
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="automation">Automation</option>
+                                <option value="integration">Integration</option>
+                                <option value="development">Web Development</option>
+                                <option value="ai">AI Leverage</option>
+                                <option value="other">Something Else</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell me about your project</label>
+                            <textarea id="message" name="message" placeholder="What's not working? What are you trying to accomplish?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info fade-up fade-up-delay-1">
+                    <h3>Let's figure it out together</h3>
+                    <p>Not sure what you need? That's fine. Most projects start with a conversation, not a spec sheet. Tell me what's frustrating you and we'll go from there.</p>
+                    <div class="info-item">
+                        <div class="info-icon">@</div>
+                        <div class="info-content">
+                            <h4>Email directly</h4>
+                            <p><a href="mailto:info@bwkdigitalsolutions.com" class="email-link">info@bwkdigitalsolutions.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">&#9906;</div>
+                        <div class="info-content">
+                            <h4>Based in</h4>
+                            <p>Little Rock, Arkansas — working with clients everywhere.</p>
+                        </div>
+                    </div>
+                    <div class="response-note">
+                        <h4>Quick response</h4>
+                        <p>I typically respond within one business day. If it's urgent, say so — I'll prioritize it.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,7 +328,7 @@
         <div class="container fade-up">
             <h2>Ready to solve your digital problems?</h2>
             <p>Let's have a conversation about what's not working and how to fix it. No jargon, no pressure — just practical solutions.</p>
-            <a href="contact.html" class="btn btn-primary btn-large">Get In Touch</a>
+            <a href="#contact" class="btn btn-primary btn-large">Get In Touch</a>
         </div>
     </section>
     </main>
@@ -252,26 +344,26 @@
                 <div>
                     <h4>Navigation</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">How I Work</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">Automation</a></li>
-                        <li><a href="services.html">Integration</a></li>
-                        <li><a href="services.html">Development</a></li>
-                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="#services">Automation</a></li>
+                        <li><a href="#services">Integration</a></li>
+                        <li><a href="#services">Development</a></li>
+                        <li><a href="#services">AI Solutions</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Contact</h4>
                     <ul class="footer-links">
                         <li><a href="mailto:info@bwkdigitalsolutions.com">info@bwkdigitalsolutions.com</a></li>
-                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="#contact">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
