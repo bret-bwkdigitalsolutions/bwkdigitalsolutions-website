@@ -10,8 +10,8 @@ The site deploys as static HTML/CSS/JavaScript files requiring no build process.
 • **Homepage** (`/`) — Single-page marketing experience with hero section, four-service grid (automation, integration, development, AI), about preview with bird origin story, contact form, and process explanation
 • **Blog section** (`/blog/` and `/blog/index.html`) — Infrastructure ready for content publishing with empty landing page
 • **Service anchors** — On-page navigation to Services (`#services`), About (`#about`), and Contact (`#contact`) sections within homepage
+• **Standalone pages** — Empty files at `/services.html`, `/about.html`, `/contact.html` prepared for expansion beyond single-page architecture
 • **Legal pages** — Placeholder files at `/privacy.html`, `/terms.html`, `/refund.html` with no content
-• **Service pages** — Empty `/services.html`, `/about.html`, `/contact.html` files prepared for expansion
 • **SEO foundation** — Complete `/sitemap.xml`, `/robots.txt`, favicon suite, and comprehensive JSON-LD structured data marking BWK as a ProfessionalService entity with Arkansas geographic targeting
 
 ## Current Architecture
@@ -25,31 +25,31 @@ Pure static architecture eliminates backend dependencies while maximizing perfor
 • Contact form includes HTML5 validation, accessibility attributes, proper ARIA labeling, and skip-to-content navigation
 • Rich metadata enables proper search engine indexing with structured data for services, founder info, and geographic targeting
 • Performance optimizations include image lazy loading, font preconnection, CSS cache-busting with version parameters, and optimized image sizing
-• Automated deployment pipeline preserves static hosting benefits while enabling continuous delivery with external documentation sync
+• Automated deployment pipeline preserves static hosting benefits while enabling continuous delivery
 
 ## Recent Activity
-Over the past month, work concentrates on **blog infrastructure buildout** with post templates, CLI publishing commands via `.claude/commands/publish-blog.md`, and automated weekly draft generation workflows. Mid-April development added **contact and interaction features** including functional contact form markup, detailed process explanations, and BWK's bird origin story content. Earlier April emphasized **visual polish and animation systems** with staggered hero entrance effects, navbar scroll state transitions, service grid hover behaviors, comprehensive accessibility improvements, and cache-busting implementation for reliable CSS updates.
+The site maintains regular automated living state documentation updates occurring weekly. Core functionality remains stable with no significant feature development visible in recent commit history. Blog infrastructure exists from April buildout including post templates and publishing commands, but shows no active content creation or publishing activity. The codebase appears in a maintenance phase with documentation automation being the primary ongoing activity rather than active feature development or content expansion.
 
 ## Known Gaps & Limitations
-Contact form captures user input but lacks backend processing, making lead generation completely non-functional. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking navigation on small screens. Blog infrastructure exists but contains zero published content to demonstrate expertise or drive search traffic. No portfolio examples, client testimonials, or case studies exist to establish credibility beyond the single Stolen Water Media reference. Service descriptions remain high-level without specific deliverables, processes, pricing information, or project timelines for prospect evaluation. Legal pages exist as empty placeholders with no actual terms, privacy policy, or refund policy content.
+Contact form captures user input but lacks backend processing, making lead generation completely non-functional. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking navigation on small screens. Blog infrastructure exists but contains zero published content to demonstrate expertise or drive search traffic. Service descriptions remain high-level without specific deliverables, processes, pricing information, or project timelines. Legal pages exist as empty placeholders with no actual terms, privacy policy, or refund policy content. No portfolio examples, client testimonials, or case studies exist to establish credibility beyond surface-level service descriptions.
 
 ## Next Meaningful Capabilities
-Functional contact form processing that maintains static hosting benefits while ensuring reliable lead delivery and spam protection. Published blog content demonstrating technical expertise and practical business problem-solving to establish thought leadership. Working mobile navigation enabling full site functionality across all device types. Client showcase featuring anonymized case studies with measurable business impact and specific outcomes. Expanded service pages explaining detailed deliverables, project processes, timeline expectations, and investment ranges for better prospect qualification and conversion.
+Functional contact form processing that maintains static hosting benefits while ensuring reliable lead delivery and spam protection. Published blog content demonstrating technical expertise and practical business problem-solving to establish thought leadership. Working mobile navigation enabling full site functionality across all device types. Client showcase featuring case studies with measurable business impact and specific outcomes. Expanded service pages explaining detailed deliverables, project processes, timeline expectations, and investment ranges for better prospect qualification.
 
 ## Open Technical Questions
-Contact form backend strategy balancing static hosting constraints with spam protection and reliable delivery requirements—considering serverless functions vs third-party form services. Blog content strategy optimizing publishing ease against long-term maintenance overhead for sustainable expertise demonstration without breaking static architecture. Mobile navigation implementation choice between JavaScript interactivity or CSS-only responsive solutions for maintenance simplicity. Analytics integration approach balancing visitor insights with privacy compliance and site performance impact. Service page architecture decision between single-page anchors vs dedicated pages for SEO and user experience optimization.
+Contact form backend strategy balancing static hosting constraints with spam protection and reliable delivery requirements—considering serverless functions vs third-party form services. Blog content strategy optimizing publishing ease against long-term maintenance overhead for sustainable expertise demonstration. Mobile navigation implementation choice between JavaScript interactivity or CSS-only responsive solutions for maintenance simplicity. Analytics integration approach balancing visitor insights with privacy compliance and site performance impact. Service page architecture decision between single-page anchors vs dedicated pages for SEO and user experience optimization.
 
 ## Key Files & Entry Points
 • `index.html` — Complete single-page marketing site with business messaging, service grid, hero animations, and contact form structure
 • `styles.css` — Comprehensive design system with custom properties, CSS Grid layouts, keyframe animations, and responsive interaction states
 • `.github/workflows/deploy.yml` — Cloudways deployment automation with external Obsidian Hub notification integration
 • `blog/index.html` — Blog landing page infrastructure with empty content structure ready for publishing
-• `_templates/blog-post.html` — Standardized post template ensuring consistent formatting, SEO metadata, and site integration
+• `_templates/blog-post.html` — Standardized post template ensuring consistent formatting and site integration
 • `.claude/commands/publish-blog.md` — Publishing workflow documentation and CLI automation command specifications
 • `sitemap.xml` — SEO site structure with priority weighting and update frequency for search engine optimization
-• `_templates/new-client.sh` — Client onboarding automation script for project initialization and workflow setup
-• `llms.txt` and `llms-full.txt` — AI discoverability optimization files for improved search and AI assistant recognition
-• `404.html` — Custom error page maintaining brand experience and navigation for missing page requests
+• `_templates/new-client.sh` — Client onboarding automation script for project initialization
+• `llms.txt` and `llms-full.txt` — AI discoverability optimization files for improved search recognition
+• `404.html` — Custom error page maintaining brand experience for missing page requests
 
 ---
-_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-05-11_
+_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-05-14_
