@@ -4,18 +4,18 @@
 A professional marketing website for BWK Digital Solutions, a Little Rock-based consultancy that helps businesses solve digital problems through automation, integration, web development, and AI implementation. The site serves as the primary customer acquisition channel for business owners seeking practical digital solutions, positioning founder Bret Kramer as a problem-solver who cuts through technical complexity with the tagline "Technology Should Solve Problems, Not Create Them."
 
 ## How to Run & Access
-The site deploys as static HTML/CSS/JavaScript files requiring no build process. Production runs at https://bwkdigitalsolutions.com/ through automated GitHub Actions deployment to Cloudways hosting. Local development works by opening `index.html` directly in a browser or serving through any basic HTTP server. Deployment triggers automatically on pushes to main branch via `.github/workflows/deploy.yml` and includes external notification to an Obsidian Hub system for documentation sync.
+The site runs as static HTML/CSS/JavaScript files requiring no build process. Local development works by opening `index.html` directly in a browser or serving through any basic HTTP server. Production deploys automatically to https://bwkdigitalsolutions.com/ via GitHub Actions workflow that pushes to Cloudways hosting on every main branch commit. The deployment includes automated notification to an external Obsidian Hub system for documentation synchronization.
 
 ## Site Map / Content Structure
 • **Homepage** (`/`) — Single-page marketing experience with hero section, four-service grid (automation, integration, development, AI), about preview with bird origin story, contact form, and process explanation
-• **Blog section** (`/blog/` and `/blog/index.html`) — Infrastructure ready for content publishing with empty landing page
-• **Service anchors** — On-page navigation to Services (`#services`), About (`#about`), and Contact (`#contact`) sections within homepage
-• **Standalone pages** — Empty files at `/services.html`, `/about.html`, `/contact.html` prepared for expansion beyond single-page architecture
-• **Legal pages** — Placeholder files at `/privacy.html`, `/terms.html`, `/refund.html` with no content
-• **SEO foundation** — Complete `/sitemap.xml`, `/robots.txt`, favicon suite, and comprehensive JSON-LD structured data marking BWK as a ProfessionalService entity with Arkansas geographic targeting
+• **Blog infrastructure** (`/blog/` and `/blog/index.html`) — Empty landing page ready for content publishing
+• **Service navigation** — On-page anchors to Services (`#services`), About (`#about`), and Contact (`#contact`) sections within homepage
+• **Prepared standalone pages** — Empty shells at `/services.html`, `/about.html`, `/contact.html` for future expansion beyond single-page architecture
+• **Legal placeholders** — Empty files at `/privacy.html`, `/terms.html`, `/refund.html`
+• **SEO foundation** — Complete `/sitemap.xml`, `/robots.txt`, favicon suite, comprehensive JSON-LD structured data marking BWK as a ProfessionalService with Arkansas geographic targeting
 
 ## Current Architecture
-Pure static architecture eliminates backend dependencies while maximizing performance and hosting portability. CSS custom properties establish a cohesive design system with semantic color variables (`--ink`, `--warm`, `--cream`) and consistent spacing patterns using CSS Grid and Flexbox layouts. Typography pairs DM Sans for body text with DM Serif Display for headings, loaded via Google Fonts with preconnect optimization. Comprehensive SEO implementation includes JSON-LD structured data for ProfessionalService schema, Arkansas geographic targeting, complete Open Graph/Twitter Card metadata, and structured service catalog definitions. GitHub Actions handles zero-downtime deployment with static file replacement and external system notifications.
+Pure static architecture eliminates backend dependencies while maximizing performance and hosting portability. CSS custom properties establish a cohesive design system with semantic color variables (`--ink`, `--warm`, `--cream`) and consistent spacing patterns using CSS Grid and Flexbox layouts. Typography pairs DM Sans for body text with DM Serif Display for headings, loaded via Google Fonts with preconnect optimization. Comprehensive SEO implementation includes JSON-LD structured data for ProfessionalService schema, Arkansas geographic targeting, complete Open Graph/Twitter Card metadata, and structured service catalog definitions. GitHub Actions handles deployment with static file replacement and external system notifications.
 
 ## What Works Today
 • Fixed navigation with backdrop blur effects and scroll-responsive styling that adds shadow and opacity changes
@@ -28,7 +28,7 @@ Pure static architecture eliminates backend dependencies while maximizing perfor
 • Automated deployment pipeline preserves static hosting benefits while enabling continuous delivery
 
 ## Recent Activity
-The site maintains regular automated living state documentation updates occurring weekly. Core functionality remains stable with no significant feature development visible in recent commit history. Blog infrastructure exists from April buildout including post templates and publishing commands, but shows no active content creation or publishing activity. The codebase appears in a maintenance phase with documentation automation being the primary ongoing activity rather than active feature development or content expansion.
+The site maintains regular automated living state documentation updates occurring weekly with no significant feature development. Core functionality remains stable with the last meaningful features added in mid-April: blog infrastructure buildout including post templates and publishing commands, contact form implementation, process section development, and enhanced design polish with staggered hero animations and navbar scroll states. Recent activity focuses entirely on documentation automation rather than active feature development or content creation.
 
 ## Known Gaps & Limitations
 Contact form captures user input but lacks backend processing, making lead generation completely non-functional. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking navigation on small screens. Blog infrastructure exists but contains zero published content to demonstrate expertise or drive search traffic. Service descriptions remain high-level without specific deliverables, processes, pricing information, or project timelines. Legal pages exist as empty placeholders with no actual terms, privacy policy, or refund policy content. No portfolio examples, client testimonials, or case studies exist to establish credibility beyond surface-level service descriptions.
@@ -52,4 +52,4 @@ Contact form backend strategy balancing static hosting constraints with spam pro
 • `404.html` — Custom error page maintaining brand experience for missing page requests
 
 ---
-_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-05-21_
+_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-05-25_
