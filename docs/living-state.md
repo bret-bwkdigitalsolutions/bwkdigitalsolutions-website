@@ -1,55 +1,55 @@
 # bwkdigitalsolutions-website — Living State
 
 ## What This Is
-A professional marketing website for BWK Digital Solutions, a Little Rock-based digital consultancy that helps businesses solve practical problems through automation, integration, web development, and AI implementation. The site serves as the primary customer acquisition channel for business owners seeking to eliminate digital friction, positioning founder Bret Kramer as a problem-solver who cuts through technical complexity with the tagline "Technology Should Solve Problems, Not Create Them."
+A professional marketing website for BWK Digital Solutions, a Little Rock-based digital consultancy founded by Bret Kramer that helps businesses solve practical problems through automation, integration, web development, and AI implementation. The site serves as the primary customer acquisition channel for business owners seeking to eliminate digital friction, with the core positioning "Technology Should Solve Problems, Not Create Them."
 
 ## How to Run & Access
-The site runs as static HTML/CSS/JavaScript files requiring no build process. Local development works by opening `index.html` directly in a browser or serving through any basic HTTP server. Production deploys automatically to https://bwkdigitalsolutions.com/ via GitHub Actions workflow that pushes to Cloudways hosting on every main branch commit. The deployment includes automated notification to an external Obsidian Hub system for documentation synchronization.
+The site runs as static HTML/CSS/JavaScript files with no build process required. Local development works by opening `index.html` directly in a browser or serving through any HTTP server. Production deploys automatically to https://bwkdigitalsolutions.com/ via GitHub Actions workflow that pushes to Cloudways hosting on every main branch commit. The deployment pipeline includes automated notification to an external Obsidian Hub system for documentation synchronization.
 
 ## Site Map / Content Structure
-• **Homepage** (`/`) — Single-page marketing experience with hero section, four-service grid (automation, integration, development, AI), about preview with bird origin story, contact form, and process explanation
-• **Blog infrastructure** (`/blog/` and `/blog/index.html`) — Empty landing page ready for content publishing
+• **Homepage** (`/`) — Single-page marketing experience with hero section, four-service showcase (automation, integration, web development, AI leverage), about preview featuring the company's bird logo origin story, contact form, and process explanation
+• **Blog infrastructure** (`/blog/` and `/blog/index.html`) — Landing page structure ready for content publishing
 • **Service navigation** — On-page anchors to Services (`#services`), About (`#about`), and Contact (`#contact`) sections within homepage
-• **Prepared standalone pages** — Empty shells at `/services.html`, `/about.html`, `/contact.html` for future expansion beyond single-page architecture
-• **Legal placeholders** — Empty files at `/privacy.html`, `/terms.html`, `/refund.html`
-• **SEO foundation** — Complete `/sitemap.xml`, `/robots.txt`, favicon suite, comprehensive JSON-LD structured data marking BWK as a ProfessionalService with Arkansas geographic targeting
+• **Prepared standalone pages** — Shell files at `/services.html`, `/about.html`, `/contact.html` for future expansion beyond single-page architecture
+• **Legal framework** — Placeholder pages at `/privacy.html`, `/terms.html`, `/refund.html`
+• **SEO infrastructure** — Complete `/sitemap.xml`, `/robots.txt`, favicon suite, comprehensive JSON-LD structured data marking BWK as a ProfessionalService with Arkansas geographic targeting
 
 ## Current Architecture
-Pure static architecture eliminates backend dependencies while maximizing performance and hosting portability. CSS custom properties establish a cohesive design system with semantic color variables (`--ink`, `--warm`, `--cream`) and consistent spacing patterns using CSS Grid and Flexbox layouts. Typography pairs DM Sans for body text with DM Serif Display for headings, loaded via Google Fonts with preconnect optimization. Comprehensive SEO implementation includes JSON-LD structured data for ProfessionalService schema, Arkansas geographic targeting, complete Open Graph/Twitter Card metadata, and structured service catalog definitions. GitHub Actions handles deployment with static file replacement and external system notifications.
+Pure static architecture maximizes performance while eliminating backend dependencies. CSS custom properties establish a cohesive design system with semantic color variables (`--ink` for dark navy, `--warm` for gold accents, `--cream` for backgrounds) and consistent spacing using CSS Grid and Flexbox. Typography pairs DM Sans for body text with DM Serif Display for headings, optimized through Google Fonts preconnect. Rich SEO implementation includes JSON-LD structured data for ProfessionalService schema, Arkansas geographic targeting, comprehensive Open Graph/Twitter Card metadata, and detailed service catalog definitions. GitHub Actions manages deployment through static file replacement with external system notifications.
 
 ## What Works Today
-• Fixed navigation with backdrop blur effects and scroll-responsive styling that adds shadow and opacity changes
+• Fixed navigation with backdrop blur effects and scroll-responsive styling that adds shadow and opacity changes on page scroll
 • Staggered CSS keyframe animations create polished hero entrance with sequential reveals for heading, description, and CTA buttons
-• Four-service grid displays automation, integration, development, and AI services with hover interactions including left accent bars and background glow effects
-• Responsive design adapts to mobile viewports with fluid typography scaling using CSS clamp functions
-• Contact form includes HTML5 validation, accessibility attributes, proper ARIA labeling, and skip-to-content navigation
-• Rich metadata enables proper search engine indexing with structured data for services, founder info, and geographic targeting
-• Performance optimizations include image lazy loading, font preconnection, CSS cache-busting with version parameters, and optimized image sizing
-• Automated deployment pipeline preserves static hosting benefits while enabling continuous delivery
+• Four-service grid displays automation, integration, development, and AI services with hover interactions including animated left accent bars and background glow effects
+• Responsive design adapts across viewports with fluid typography scaling using CSS clamp functions
+• Contact form includes HTML5 validation, proper ARIA labeling, and accessibility features like skip-to-content navigation
+• Rich metadata enables proper search engine indexing with structured data for services, founder information, and geographic targeting
+• Performance optimizations include image lazy loading, font preconnection, CSS cache-busting with version parameters
+• Automated deployment maintains hosting simplicity while enabling continuous delivery
 
 ## Recent Activity
-The site maintains regular automated living state documentation updates occurring weekly with no significant feature development. Core functionality remains stable with the last meaningful features added in mid-April: blog infrastructure buildout including post templates and publishing commands, contact form implementation, process section development, and enhanced design polish with staggered hero animations and navbar scroll states. Recent activity focuses entirely on documentation automation rather than active feature development or content creation.
+Over the past month, activity consists entirely of automated living state documentation updates occurring weekly with no feature development or content creation. The last meaningful development occurred in mid-April when blog infrastructure, contact form implementation, process section development, and enhanced design polish with staggered hero animations were added. Current momentum focuses exclusively on documentation automation rather than active site development.
 
 ## Known Gaps & Limitations
-Contact form captures user input but lacks backend processing, making lead generation completely non-functional. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking navigation on small screens. Blog infrastructure exists but contains zero published content to demonstrate expertise or drive search traffic. Service descriptions remain high-level without specific deliverables, processes, pricing information, or project timelines. Legal pages exist as empty placeholders with no actual terms, privacy policy, or refund policy content. No portfolio examples, client testimonials, or case studies exist to establish credibility beyond surface-level service descriptions.
+Contact form captures user input but lacks backend processing, making lead generation completely non-functional. Mobile menu button references undefined `toggleMenu()` JavaScript function, breaking navigation on small screens. Blog infrastructure exists but contains zero published content to demonstrate expertise. Service descriptions remain high-level without specific deliverables, processes, pricing, or timelines. Legal pages exist as empty placeholders with no actual policy content. No portfolio examples, client testimonials, or case studies exist to establish credibility beyond service descriptions.
 
 ## Next Meaningful Capabilities
-Functional contact form processing that maintains static hosting benefits while ensuring reliable lead delivery and spam protection. Published blog content demonstrating technical expertise and practical business problem-solving to establish thought leadership. Working mobile navigation enabling full site functionality across all device types. Client showcase featuring case studies with measurable business impact and specific outcomes. Expanded service pages explaining detailed deliverables, project processes, timeline expectations, and investment ranges for better prospect qualification.
+Functional contact form processing that maintains static hosting benefits while ensuring reliable lead delivery and spam protection. Published blog content demonstrating technical expertise and business problem-solving to establish thought leadership. Working mobile navigation enabling full site functionality across device types. Client showcase featuring case studies with measurable business outcomes. Expanded service pages with detailed deliverables, processes, timelines, and investment ranges for better prospect qualification.
 
 ## Open Technical Questions
-Contact form backend strategy balancing static hosting constraints with spam protection and reliable delivery requirements—considering serverless functions vs third-party form services. Blog content strategy optimizing publishing ease against long-term maintenance overhead for sustainable expertise demonstration. Mobile navigation implementation choice between JavaScript interactivity or CSS-only responsive solutions for maintenance simplicity. Analytics integration approach balancing visitor insights with privacy compliance and site performance impact. Service page architecture decision between single-page anchors vs dedicated pages for SEO and user experience optimization.
+Contact form backend strategy balancing static hosting constraints with spam protection and reliable delivery—considering serverless functions versus third-party form services. Blog publishing workflow that optimizes content creation ease against long-term maintenance overhead. Mobile navigation implementation choice between JavaScript interactivity or CSS-only solutions for maintenance simplicity. Analytics integration approach balancing visitor insights with privacy compliance and performance impact. Service page architecture decision between single-page anchors versus dedicated pages for SEO optimization.
 
 ## Key Files & Entry Points
-• `index.html` — Complete single-page marketing site with business messaging, service grid, hero animations, and contact form structure
+• `index.html` — Complete single-page marketing site with business messaging, service showcase, hero animations, and contact form structure
 • `styles.css` — Comprehensive design system with custom properties, CSS Grid layouts, keyframe animations, and responsive interaction states
-• `.github/workflows/deploy.yml` — Cloudways deployment automation with external Obsidian Hub notification integration
-• `blog/index.html` — Blog landing page infrastructure with empty content structure ready for publishing
+• `.github/workflows/deploy.yml` — Cloudways deployment automation with Obsidian Hub notification integration
+• `blog/index.html` — Blog landing page infrastructure ready for content publishing
 • `_templates/blog-post.html` — Standardized post template ensuring consistent formatting and site integration
-• `.claude/commands/publish-blog.md` — Publishing workflow documentation and CLI automation command specifications
-• `sitemap.xml` — SEO site structure with priority weighting and update frequency for search engine optimization
+• `.claude/commands/publish-blog.md` — Publishing workflow documentation and CLI automation specifications
+• `sitemap.xml` — SEO site structure with priority weighting and update frequency optimization
 • `_templates/new-client.sh` — Client onboarding automation script for project initialization
 • `llms.txt` and `llms-full.txt` — AI discoverability optimization files for improved search recognition
 • `404.html` — Custom error page maintaining brand experience for missing page requests
 
 ---
-_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-05-28_
+_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-06-01_
