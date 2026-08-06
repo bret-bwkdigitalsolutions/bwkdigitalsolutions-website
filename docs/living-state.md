@@ -35,24 +35,24 @@ Pure static HTML/CSS/vanilla JS, with no backend, framework, or build tooling �
 - Zero-touch deployment to production on every `main` commit, plus a downstream notification hook to an external docs system
 
 ## Recent Activity
-The past several weeks have produced nothing but recurring "regenerate living state" documentation commits — no HTML, CSS, or workflow changes accompany any of them. The last substantive change to the site was publishing a single blog post in early June ("Why Your AI Isn't Saving You as Much Time as It Should"). Since then, across more than a month and roughly a dozen-plus consecutive commits, the project has been in a full holding pattern — the repo is being touched only by its own automated docs regeneration, not by anyone building. The last real building happened in mid-April, in a tight cluster: blog infrastructure (post template, publish command, weekly draft cron), then the contact form, process section, and bird origin story, then design polish (staggered hero entrance, navbar scroll state, section refinement). That April tooling eventually shipped the June post, but the weekly cadence implied by "weekly draft cron" has not materialized since — one post in roughly three months of that automation existing. Momentum on the site itself is currently at zero; the only thing running on schedule is the living-state regeneration job describing that nothing is happening.
+Nothing substantive has shipped in roughly two months. Every commit since early June is a "docs: regenerate living state" run with no accompanying code, markup, or workflow change — the repo history is now a long, unbroken string of automated documentation refreshes describing a static codebase. The last real content event was publishing the "Why Your AI Isn't Saving You as Much Time as It Should" post in early June, itself the sole output of the blog infrastructure built in mid-April (post template, publish command, weekly draft cron). The last actual feature/design work — contact form, process section, bird origin story, staggered hero entrance, navbar scroll state — also dates to that same mid-April cluster. Momentum on the site itself remains at zero; the only process still running on a cadence is the living-state regeneration job, which has now reported "no change" for well over a dozen consecutive cycles.
 
 ## Known Gaps & Limitations
 - Contact form has no backend — it's fully styled but submits nowhere; there is no functioning lead capture on the site
 - `index.html`'s mobile menu button calls `toggleMenu()`, but no JS file or inline script defining that function is visible anywhere in the tree — mobile navigation is at real risk of being broken in production
 - `blog.html` and `blog/index.html` both exist with no clear signal of which is canonical or linked from nav — likely a leftover from an unfinished restructure
 - `about.html`, `services.html`, and `contact.html` exist as standalone pages, but homepage nav links to same-named in-page anchors instead — unclear whether these standalone pages are live, orphaned, or a planned future IA
-- Blog has exactly one post despite weekly-draft cron tooling being in place for roughly three months — the implied cadence has not been realized, and the gap is widening, not closing
+- Blog has exactly one post despite weekly-draft cron tooling being in place for roughly four months — the implied cadence has never materialized, and the gap keeps widening
 - `privacy.html`, `terms.html`, and `refund.html` are placeholder-level content — the site links to legal policies that aren't substantively written
 - No portfolio, case studies, testimonials, or other third-party credibility signals beyond service descriptions and copy claims
 - No analytics, form-spam protection, or uptime/error monitoring anywhere in the codebase
 - `_templates/new-client.sh` has no documentation tying it to this site specifically
-- The living-state doc has kept auto-regenerating on schedule for well over a month with nothing new to report each time — a clear sign the automation is running well ahead of actual project activity
+- The living-state doc has now auto-regenerated on schedule for roughly two months straight with nothing new to report each time — automation is running far ahead of actual project activity, to the point of masking that the project is dormant
 
 ## Next Meaningful Capabilities
 - A working contact form backend (static-form service or a small serverless function) turns the site from a brochure into an actual lead-generation channel
 - Resolving the `blog.html` vs. `blog/index.html` duplication and the anchor-vs-standalone-page ambiguity removes navigational confusion and lets each page carry its own SEO weight cleanly
-- A resumed, consistent blog cadence starts compounding the SEO/AI-discoverability investment already built into the metadata layer, which is currently mostly dormant
+- A resumed, consistent blog cadence starts compounding the SEO/AI-discoverability investment already built into the metadata layer, which is currently sitting almost entirely unused
 - Verified, working mobile navigation makes the site reliably usable for phone-based first-touch traffic
 - Populated legal pages (privacy/terms/refund) close a trust and compliance gap for a business taking on client engagements
 - Case studies or client proof points give prospects a concrete reason to convert beyond service descriptions alone
@@ -62,9 +62,10 @@ The past several weeks have produced nothing but recurring "regenerate living st
 - What is the actual relationship between the homepage anchor sections and the standalone `about.html`/`services.html`/`contact.html` pages?
 - Is `toggleMenu()` defined somewhere outside the reviewed tree, or is mobile navigation currently non-functional in production?
 - What form backend fits a fully static, no-server hosting model — third-party form service, serverless function, or email-only fallback — and has this been decided or just deferred?
-- Why has the April weekly draft cron produced only one published post in roughly three months — is it not firing, or is content being drafted and never published?
+- Why has the mid-April weekly draft cron produced only one published post in roughly four months — is it not firing, is content being drafted and never published, or has it been abandoned?
 - Is `_templates/new-client.sh` meant for this repo, or a leftover from using this project as a template for other client engagements?
 - Is analytics/monitoring intentionally out of scope, or simply not yet prioritized?
+- Is the project intentionally paused, or is the recurring living-state regeneration the only signal left that the repo is still "active" at all?
 
 ## Key Files & Entry Points
 - `index.html` — homepage: hero, services, about preview, contact form, structured data
@@ -79,4 +80,4 @@ The past several weeks have produced nothing but recurring "regenerate living st
 - `docs/superpowers/specs/2026-03-28-seo-ai-discoverability-design.md` — design rationale for the SEO/AI discoverability approach
 
 ---
-_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-07-30_
+_Auto-generated by [obsidian-hub](https://github.com/bret-bwkdigitalsolutions/obsidian-hub) · 2026-08-06_
